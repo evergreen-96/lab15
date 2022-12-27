@@ -56,7 +56,7 @@ if [[ "$arch_count" -ge "$max_arch_count" ]]; then
 fi
 
 username=verbect
-ip=192.168.0.112
+ip=127.0.0.1
 dest_path=~/backups
 
 scp $farch_name $username@$ip:$dest_path
