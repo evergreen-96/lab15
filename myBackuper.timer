@@ -5,7 +5,7 @@
 
 [Unit]
 Description=Logs some system statistics to the systemd journal
-Requires=myBackuper.service
+Requires=task_to_backup.service
 
 [Timer]
 Unit=myBackuper.service
