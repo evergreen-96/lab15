@@ -45,7 +45,7 @@ fi
 
 abs_dst="$(cd "$(dirname $dst)"; pwd)/$(basename $dst)"
 cd "$(dirname $src)"
-tar -czPf $abs_dst/$farch_name --exclude="backup" --exclude="restore" -C $(basename $src) $(ls "$(basename $src)")
+tar -czPf $abs_dst/$farch_name --exclude="backup" --exclude="restore" --exclude="backup_timer.timer" --exclude="task_to_backup.service" -C $(basename $src) $(ls "$(basename $src)")
 
 declare -i arch_count=$(find $dst -type f  | grep ".tar.gz" | wc -l)
 
