@@ -3,7 +3,7 @@ Wants=backup_timer.timer
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash app/backup /usr/ /home/backup/archive_backup
+ExecStart=/usr/bin/bash app/ /home/backup/
 
 [Install]
 WantedBy=multi-user.target
