@@ -60,4 +60,4 @@ ip=127.0.0.1
 dest_path=~/backups
 
 scp $farch_name $username@$ip:$dest_path
-exit
+
