@@ -5,11 +5,11 @@
 
 [Unit]
 Description=Automatically creates backup and sends it via scp
-Wants=myBackuper.timer
+Wants=backup_timer.timer
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash /home/verbect/backup.sh /home/verbect/asd/ /home/verbect/ myBackup
+ExecStart=/usr/bin/bash /home/rnovikov/backup /home/verbect/backup/ /home/backup/archive_backup
 
 [Install]
 WantedBy=multi-user.target
